@@ -1,0 +1,33 @@
+@media screen and (max-width: 480px) {
+  body {
+  }
+  h1 {
+    font-size: 1.7em
+  }
+  .img-div {
+    width: 95vw;
+    height: 73vw;
+  }
+  .slider {
+    height: 100% !important;
+  }
+  .slide {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  #info {
+    flex-direction: column;
+    padding: 5px;
+  }
+  .section {
+    width: 95%;
+    margin: 5px 0 5px 0;
+    border-radius: 0;
+  }
+  .text-input {
+    width: 95%;
+  }
+  .flex-container {
+    flex-direction: column;
+  }
+}

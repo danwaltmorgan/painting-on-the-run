@@ -1,18 +1,20 @@
 import React from 'react'
+import Form from './Form'
 
 class Info extends React.Component {
   render() {
     return (
       <div id="info">
         <div id="info-section" className="section">
-          <p >Lorem ipsum dolor sit amet, populo impedit vivendum sed ea. At pri augue audire, ea ius aliquam dissentiunt. Omnis aeque his te, assum possit explicari eu his. Ea inermis intellegebat est, duo equidem cotidieque ex, eu viris ancillae sapientem his. Denique apeirian ius in, dicit appareat nec an, sea docendi propriae ad.
+          <p >Founded in Glendale, Ohio by Marshall Bohlander, <b>Painting on the Run</b> is a location independent service that is fast, affordable and professional. The team has years of experience and will have your property looking brand new in no time!
           </p>
         </div>
 
         <div id="contact" className="section">
           <h2><u>Contact</u></h2>
           <p>If you would like more information, <br /> please contact Marshall Bohlander:</p>
-          <p>(513) 312-7322</p>
+          <p>Phone: (513) 312-7322</p>
+          <Form />
         </div>
       </div>
     )

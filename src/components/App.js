@@ -1,13 +1,14 @@
 import React from 'react'
 import '../style.css'
+import '../media.css'
 import logo from './images/logo.png'
-import house from './images/white_house.png'
 import Info from './Info'
+import SlideImage from './SlideImage'
 
 class App extends React.Component {
   render() {
     return (
-      <div>
+      <div id="page-container">
         <Header />
         <SlideImage />
         <Info />
@@ -25,6 +26,7 @@ class Header extends React.Component {
           id="logo"
           className="headerEl"
           src={logo}
+          alt="Logo; paintbrush painting the words 'Painting on the Run' onto a house"
           >
         </img>
         <h1
@@ -36,34 +38,13 @@ class Header extends React.Component {
   }
 }
 
-class SlideImage extends React.Component {
-  // componentDidMount() {
-  //   let num = 0;
-  //   let style = document.querySelector('#test').style
-  //   window.setInterval(() => {
-  //     num = (num + 1) % 4
-  //     style.marginLeft = `${-600 * num}px`
-  //   }, 3000)
-  // }
 
-  render() {
-    return (
-      <div className="img-div">
-        <img
-          src={house}
-          className="slideImage"
-          id="test"
-          ></img>
-      </div>
-    )
-  }
-}
 
 class Footer extends React.Component {
   render() {
     return(
       <footer>
-        <h3>CopyRight <u>Painting on the Run</u> @ 2020</h3>
+        <h4>CopyRight <u>Painting on the Run</u> @ 2020</h4>
       </footer>
     )
   }
