@@ -2,7 +2,7 @@
   body {
   }
   h1 {
-    font-size: 1.7em
+    font-size: 1.8em
   }
   .img-div {
     width: 95vw;
@@ -22,7 +22,6 @@
   .section {
     width: 95%;
     margin: 5px 0 5px 0;
-    border-radius: 0;
   }
   .text-input {
     width: 95%;

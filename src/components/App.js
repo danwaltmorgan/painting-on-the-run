@@ -31,7 +31,7 @@ class Header extends React.Component {
         </img>
         <h1
           className="headerEl"
-          >Painting on the Run
+          >Painting How You Want It
         </h1>
       </header>
     )

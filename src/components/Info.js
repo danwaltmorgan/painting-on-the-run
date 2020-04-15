@@ -6,7 +6,7 @@ class Info extends React.Component {
     return (
       <div id="info">
         <div id="info-section" className="section">
-          <p >Founded in Glendale, Ohio by Marshall Bohlander, <b>Painting on the Run</b> is a location independent service that is fast, affordable and professional. The team has years of experience and will have your property looking brand new in no time!
+          <p>Founded in Glendale, Ohio by Marshall Bohlander, <b>Painting How You Want It</b> is a location independent service that is fast, affordable and professional. The team has years of experience and will have your property looking brand new in no time!
           </p>
         </div>
 
