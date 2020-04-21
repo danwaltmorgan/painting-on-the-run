@@ -1,29 +1,81 @@
 import React from 'react'
-import house from './images/white_house.png'
-import roof from './images/wh_roof.png'
-import brick from './images/brick-front.png'
-import back from './images/brick-back.png'
-import mic from './images/mic.png'
 
-import Slider from 'react-animated-slider'
-import 'react-animated-slider/build/horizontal.css'
+import pics from './images/imgObj'
+
+// import Slider from 'react-animated-slider'
+// import 'react-animated-slider/build/horizontal.css'
+
+import ScrollMenu from 'react-horizontal-scrolling-menu';
+
+// const list = pics
+
+// One item component
+// selected prop will be passed
+// const MenuItem = ({source, selected}) => {
+//   return <img
+//     src={source}
+//     className={`menu-item ${selected ? 'active' : ''}`}
+//     ></img>;
+// };
+
+// All items component
+// Important! add unique key
+export const Menu = () =>
+  pics.map(pic => {
+    // const {pics} = el;
+
+    return <img src={pic.pic} key={pics} alt={pic.alt} />;
+  });
+
+
+const Arrow = ({ text, className }) => {
+  return (
+    <div
+      className={className}
+    >{text}</div>
+  );
+};
+
+
+const ArrowLeft = Arrow({ text: '<', className: 'arrow-prev' });
+const ArrowRight = Arrow({ text: '>', className: 'arrow-next' });
+
+const selected = 'item1';
 
 class SlideImage extends React.Component {
+  constructor(props) {
+    super(props);
+    // call it again if items count changes
+    this.menuItems = Menu();
+  }
+
+  state = {
+    selected
+  };
+
+  onSelect = key => {
+    this.setState({ selected: key });
+  }
 
 
   render() {
-    const pics = [{pic: house, alt: "picture of a white house"}, {pic: roof, alt: "picture of the roof of a house, looking down"}, {pic: brick, alt: "Picture of a brick house from the front"}, {pic: back, alt: "picture of a brick house from the back. Most is painted"}, {pic: mic, alt: "mic in front of a painted wall"}]
-    const photos = pics.map((pic, idx) => {
-      return <img src={pic.pic} alt={pic.alt} key={idx}></img>
-    })
+    const { selected } = this.state;
+    // Create menu from items
+    const menu = this.menuItems;
+
     return (
-      <div className="img-div">
-         <Slider height="100%" autoplay="2000">
-           {photos}
-         </Slider>
+      <div className="App">
+        <ScrollMenu
+          data={menu}
+          arrowLeft={ArrowLeft}
+          arrowRight={ArrowRight}
+          selected={selected}
+          onSelect={this.onSelect}
+        />
       </div>
-    )
+    );
   }
 }
+
 
 export default SlideImage
