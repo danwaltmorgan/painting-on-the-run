@@ -2,8 +2,8 @@ import React from 'react'
 
 import pics from './images/imgObj'
 
-// import Slider from 'react-animated-slider'
-// import 'react-animated-slider/build/horizontal.css'
+import Slider from 'react-animated-slider'
+import 'react-animated-slider/build/horizontal.css'
 
 import { Controller, Scene } from 'react-scrollmagic'
 
@@ -26,10 +26,10 @@ class SlideImage extends React.Component {
     })
     return (
       <div className="img-div">
-          {photos}
-         {/* <Slider */}
-         {/* autoplay="1500"> */}
-         {/* </Slider> */}
+         <Slider
+           autoplay="1500">
+           {photos}
+         </Slider>
       </div>
     )
   }
