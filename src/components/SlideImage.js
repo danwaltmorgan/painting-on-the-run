@@ -1,36 +1,32 @@
 import React from 'react'
-
 import pics from './images/imgObj'
-
-import Slider from 'react-animated-slider'
-import 'react-animated-slider/build/horizontal.css'
-
-import { Controller, Scene } from 'react-scrollmagic'
+import HorizontalScroller from 'react-horizontal-scroll-container'
 
 class SlideImage extends React.Component {
-
-
-
   render() {
-
-
     const photos = pics.map((pic, idx) => {
       return (
-          <img
-            src={pic.pic}
-            alt={pic.alt}
-            key={idx}
-            className="photos"
-            ></img>
+        <img
+          src={pic.pic}
+          alt={pic.alt}
+          key={idx}
+          className="photos"
+          className={pic.class}
+          onMouseEnter={()=>{
+            document.body.style.overflow = "hidden"
+          }}
+          onMouseLeave={()=>{
+            document.body.style.overflow = "auto"
+          }}
+        />
       )
     })
     return (
-      <div className="img-div">
-         <Slider
-           autoplay="1500">
-           {photos}
-         </Slider>
-      </div>
+      <HorizontalScroller
+         invert={true}
+      >
+        {photos}
+      </HorizontalScroller>
     )
   }
 }

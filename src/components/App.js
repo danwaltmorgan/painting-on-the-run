@@ -1,12 +1,12 @@
 import React from 'react'
 import '../style.css'
 import '../media.css'
-// import logo from './images/logo2.png'
 import Info from './Info'
 import SlideImage from './SlideImage'
 
-import { faHome } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import logo from './images/logo2.png'
+
+const title = "Black Squirrel Carpentry & Painting"
 
 class App extends React.Component {
   render() {
@@ -14,7 +14,7 @@ class App extends React.Component {
       <div id="page-container">
         <Header />
         <SlideImage />
-        <Info />
+        <Info title={title}/>
         <Footer />
       </div>
     )
@@ -29,17 +29,28 @@ class Header extends React.Component {
           <img
             id="logo"
             className="headerEl"
-            src="https://lh3.googleusercontent.com/arxPqwJl5cbW-DhX9ydFhqIKsh1vftnrWY6PrIgKMRZAtACuKmuODJL5MbnnYQ1CZGoKtG7mSW7mG3hKY-StU_-q_1Zvgc56ydDQYvRVK8Q0YTBn-v0WsCyt8A2olZ8SwKo4E6GfEg=s200-p-k"
+            src={logo}
             alt="Logo; paintbrush crossing a hammer"
             >
             </img>
             <h1
               className="headerEl"
-              >Just A-Paintin' & Renovations
+              >{title}
             </h1>
         </div>
-        <div>
-          <p className="contact-info">(513) 312-7322</p>
+        <div className="flex-container">
+          <a
+            href="#contact"
+            id="contact-anchor"
+            className="contact-info">Contact</a>
+          <div className="secondary-cont">
+            <a
+              href="tel:5137391621"
+              className="contact-info">Call</a>
+            <a
+              href="mailto:mb0694@yahoo.com"
+              className="contact-info">Email</a>
+          </div>
         </div>
       </header>
     )
@@ -52,7 +63,7 @@ class Footer extends React.Component {
   render() {
     return(
       <footer>
-        <h4>CopyRight <u>Painting How You Want It</u> @ 2020</h4>
+        <h4>CopyRight <u>{title}</u> @ 2020</h4>
       </footer>
     )
   }

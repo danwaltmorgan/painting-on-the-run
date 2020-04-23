@@ -1,10 +1,13 @@
+:root {
+  --secondary-color: 	#ccffff
+}
+
 body {
   padding: 0;
   margin: 0;
   width: 100%;
   overflow-x: hidden;
-  background-image: url('https://lh3.googleusercontent.com/3O_18cJrFbgkD6lqBB7QUhQvCyq2jsuXFU4nW_hwDGEDMuyjM8HUkATeLhKieUQ_64LrK8u-GfQvmL7GCm54A7KA6Os69mhfieT9DmoHOpOBv_p0ziwXMSR9CXL17LEZhcFLxbEZnw=w2400');
-  background-size: cover;
+  background-color: #F8F8FF
 }
 
 .page-container {
@@ -14,13 +17,13 @@ body {
 
 header {
   height: 100%;
-  background: tan;
+  background: #222;
   display: flex;
   justify-content: space-between;
   box-shadow: -5px 5px 4px;
   margin-bottom: 7px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  /* border-bottom-left-radius: 10px; */
+  /* border-bottom-right-radius: 10px; */
   align-items: center;
 }
 
@@ -28,7 +31,30 @@ header {
   margin-right: 20px;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   font-size: 20px;
-  color: #106303;
+  color: #f1f1f1;
+  text-decoration: none;
+  background: #f1f1f1;
+  color: #222;
+  padding: 5px;
+  width: 90px;
+  text-align: center;
+  border-radius: 20px;
+}
+.contact-info:hover {
+  background: lightgrey
+}
+.secondary-cont {
+  display: flex;
+}
+
+#contact-anchor {
+  background: #222;
+  color: #f1f1f1;
+  border: 1px solid #f1f1f1
+}
+#contact-anchor:hover {
+  background-color: lightgrey;
+  color: black;
 }
 
 #logo {
@@ -41,7 +67,7 @@ h1 {
   padding: 5px;
   margin: 5px;
   font-family: 'Pacifico', cursive;
-  color: #106303
+  color: #f1f1f1
 }
 
 
@@ -61,15 +87,8 @@ h1 {
   overflow-x: auto;
   direction: rtl;
 
-  /* transform: rotate(-90deg); */
-  transform-origin: center;
 }
 
-.photos {
-  /* transform: rotate(90deg); */
-  /* margin:0  50px; */
-
-}
 
 #info-section {
   font-size: 1.2em;
@@ -93,13 +112,14 @@ h1 {
 
 .section {
   width: 45%;
-  background: tan;
-  border-radius: 10px;
+  background: var(--secondary-color);
   box-shadow: -5px 5px 5px #333;
+
   padding: 20px;
   text-align: center;
   margin-bottom: 20px;
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  /* font-family: 'Cormorant Garamond', serif; */
 }
 
 h2 {
@@ -129,8 +149,8 @@ color: #f1f1f1;
   border-radius: 20px;
   border: none;
   font-size: 1.3em;
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
-
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  background: lightgrey
 }
 .flex-container {
   display: flex;
@@ -147,27 +167,9 @@ color: #f1f1f1;
   border: none;
   font-size: 1.3em;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  background: #106303;
+  background: #4CAF50;
 }
 .btn:hover {
   background-color: green;
-}
-
-.menu-item {
-  padding: 0 40px;
-  margin: 5px 10px;
-  user-select: none;
-  cursor: pointer;
-  border: none;
-}
-.menu-item-wrapper.active {
-  border: 1px blue solid;
-}
-.menu-item.active {
-  border: 1px green solid;
-}
-
-.scroll-menu-arrow {
-  padding: 20px;
-  cursor: pointer;
+  transition: .7s all
 }

@@ -2,16 +2,44 @@
   body {
   }
   h1 {
-    font-size: 2em
+    font-size: 2em;
+    text-align: center
   }
   header {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
   }
+
+  .secondary-cont {
+    margin: 10px;
+  }
+
   .img-div {
     width: 95vw;
     height: 73vw;
+  }
+
+  .photos {
+    /* width: 100%; */
+    /* height: 73vw; */
+  }
+  .wide {
+    width: 95%;
+    height: 73%;
+  }
+  .tall {
+    width: 52%;
+    height: 73%;
+  }
+  .bathroom {
+    width: 92%;
+    height: 73%;
+  }
+  .hallway {
+    height: 73%;
+    width: 52.2%;
   }
   .slider {
     height: 100% !important;
@@ -27,6 +55,7 @@
   .section {
     width: 95%;
     margin: 5px 0 5px 0;
+    background-color: #f1f1f1
   }
   .text-input {
     width: 80%;
@@ -35,12 +64,22 @@
     flex-direction: column;
   }
   .btn {
-    width: 50vw
+    width: 50vw;
+    -webkit-appearance: none;
+  }
+  footer {
+    height: 100%;
+    font-size: 1.5em;
+    padding: 20px 0;
   }
 }
 
 @media screen and (max-width: 768px) {
   .btn {
-    width: 20vw;
+    width: 30vw;
+  }
+
+  header {
+    flex-direction: column;
   }
 }
