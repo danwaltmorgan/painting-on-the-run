@@ -11,7 +11,7 @@ const pics = [
   {pic: "https://lh3.googleusercontent.com/kbr4cFsye3skNHjxofkMdBjAd04SOuBgb364I7hgBAkuqUZs01o8Gxkd6n_xQ1RhGGJ24fJsb-OiEpobsMhI32QLMZZXvyMBv1jdtFI44v9fIicyIZ5zuvlmMjDUqgkjtPKg7NHE6g=w2400", alt: "White room with a fireplace; freshly painted", class: "wide"},
 
   {pic: "https://lh3.googleusercontent.com/436e4jKqZ5ZcuksQeSmfWH9fOcvQGFPkCNBZ_sn6z95-xkmz9cEe0nuN0sv-FE1VXt4Ppt9AoW_PIINoBxSsmXv8-Yhzp8v00uLljARGHPlpWauEsMSX6S6d8DoScVJ0ehvuX8u6zg=w2400", alt: "Kitchen with freshly painted cabinets", class: "wide"},
-  {pic: "https://lh3.googleusercontent.com/LqJsrxKlRHdbeqQaJoJwBkP7vHqUPq67WdCwuOvaeAXdiy8abckeFjb27YNRXmb_1tpHF1UFyWvl7hvaeVULheKSeOeTdZP4MvBygSpkNWbBMtv1YGvokrzFtpPx3uk4fo--o-mR5Q", alt: "Painted bathroom with sink", class: "bathroom"},
+  {pic: "https://lh3.googleusercontent.com/KUG4dXInODxgxhEZlwFXznsEIIZqUM-1T55P-ZvmD9dUNbMVG583KtzbPzo0_Rp1xoxSOhbyP1XQBtQ0EMz_en53gk5Bbh-L9f72EGEx4827VB-U4cfDq3Ps00ppydqt2c2XnYfy5A", alt: "Painted bathroom with sink", class: "bathroom"},
   {pic: "https://lh3.googleusercontent.com/pdBiwcNVCfKG84r29_j0rM8rmTN8ESp4VCipkcM_jsPyXNnIxXzuKxsv0QRDsO7nq8dWxM20SI5hSfj0UdXoTEgHHkhgezgCQ7Xq_RBMAIdojJBONhL3tnyzJRt8JMI_z_Xam8manw", alt: "White Painted railing on staircase", class: "tall"},
   {pic: "https://lh3.googleusercontent.com/hretV8vGaUdhFcFbTeZKQZurrQW9BwUlOfEffKRmDTI1t8i20JgGXzPVGWCMStqsZ4fs-_oibIT6yvxQ6a-oe3u8CXmrev6hnzvhjcoiiGNqP9jBoQ9jiqLqymBNClInH9RPlX7m8A", alt: "White freshly painted hallway", class: "hallway"},
   {pic: "https://lh3.googleusercontent.com/GNz-dV3zQCz9rO51JvAkHIirLCopVeJeNV6SksDf_O0Kx4oMAjJWHetlKPjLZMaemrqBw_CKR35o1Zmr8BzhX1socU0oA_xBbbRwz1-c497QET2Y5RAE_rQtNVnnK1EPjs3uDO_wQQ=w2400", alt: "Hardwood floor, light colored", class: "tall"},

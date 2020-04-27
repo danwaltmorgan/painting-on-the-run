@@ -71,7 +71,7 @@ h1 {
 }
 
 
-.img-div {
+/* .img-div {
   margin: auto;
   margin-bottom: 7px;
   display: flex;
@@ -87,7 +87,7 @@ h1 {
   overflow-x: auto;
   direction: rtl;
 
-}
+} */
 
 
 #info-section {
@@ -96,10 +96,13 @@ h1 {
   text-align: left;
 }
 
-
-.slider {
-  height: 100% !important;
+.photos {
+  height: 100%;
 }
+
+/* .slider {
+  height: 100% !important;
+} */
 
 #info {
   padding: 20px;

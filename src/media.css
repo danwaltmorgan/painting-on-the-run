@@ -16,23 +16,25 @@
     margin: 10px;
   }
 
-  .img-div {
-    width: 95vw;
-    height: 73vw;
+   .img-div {
+    /* transform: scale(0.9) */
+    width: 100vw;
+    height: 60vw;
   }
 
   .photos {
-    /* width: 100%; */
-    /* height: 73vw; */
+    /* width: 200px; */
+    height: 60vw;
+    /* transform: scale(0.4) */
   }
-  .wide {
+  /* .wide {
     width: 95%;
     height: 73%;
   }
   .tall {
     width: 52%;
     height: 73%;
-  }
+  } */
   .bathroom {
     width: 92%;
     height: 73%;
